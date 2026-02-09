@@ -1,0 +1,88 @@
+/* Barra superior */
+#navbar {
+    background: #0a3d62;
+    padding: 12px 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Lista horizontal distribuida */
+#menu {
+    display: flex;
+    justify-content: space-between; /* ← AQUÍ LA MAGIA */
+    align-items: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+}
+
+/* Ítems principales */
+#menu > li {
+    position: relative;
+}
+
+/* Enlaces principales */
+#menu > li > a {
+    color: #dff9fb;
+    text-decoration: none;
+    padding: 8px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+/* Subrayado animado celeste */
+#menu > li > a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #74b9ff;
+    width: 0%;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+/* Hover principal */
+#menu > li > a:hover::after {
+    width: 100%;
+}
+
+/* Submenús */
+#menu li ul {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    background: #0c4b7a;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 4px;
+    min-width: 180px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar submenú */
+#menu li:hover > ul {
+    display: block;
+}
+
+/* Items del submenú */
+#menu li ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #dff9fb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+/* Hover submenú */
+#menu li ul li a:hover {
+    background: #1e6fa8;
+}
+
+/* Contenido debajo del navbar */
+#content {
+    padding: 20px;
+    margin-top: 20px;
+}

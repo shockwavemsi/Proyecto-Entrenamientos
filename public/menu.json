@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Ciclista",
+        "url": "/ciclista",
+        "children": [
+            { "id": 101, "name": "Ciclista", "url": "/ciclista" },
+            { "id": 102, "name": "Historia", "url": "/ciclista/historia" }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Plan",
+        "url": "/plan",
+        "children": [
+            { "id": 201, "name": "Sesion", "url": "/sesion" },
+            { "id": 202, "name": "Bloque de Entrenamientos", "url": "/bloque" }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Entrenamientos",
+        "url": "/entrenamientos",
+        "children": [{ "id": 201, "name": "Entreno", "url": "/entrenamientos" }]
+    },
+    {
+        "id": 4,
+        "name": "Ajustes",
+        "url": "/ajustes",
+        "children": []
+    }
+]
